@@ -3,7 +3,7 @@ from typing import Dict,Any,List
 
 from ..mcp_servers.gmail_server import GmailMCPServer
 from ..mcp_servers.gdocs_server import GDocsMCPServer 
-from ..mcp_servers.gcalendar_server import GCalendarMCPServer
+from ..mcp_servers.gcalender_server import GCalendarMCPServer
 from ..mcp_servers.gsheets_server import GSheetsMCPServer
 from ..mcp_servers.gforms_server import GFormsMCPServer
 
@@ -14,7 +14,7 @@ logger = get_logger(__name__)
 
 class MCPService:
     def __init__(self):
-        self._tool_definitions= self._load_tool_definitions()
+        self._tool_definitions= self._tool_definitions()
         self._mcp_servers = {
             "gmail":GmailMCPServer(),
             "gdocs":GDocsMCPServer(),

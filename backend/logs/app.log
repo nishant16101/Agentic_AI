@@ -1,0 +1,138 @@
+2025-11-13 16:41:11,032 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-13 16:43:56,005 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-13 16:43:56,006 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-13 16:45:18,151 - app.integrations.google_auth - ERROR - Credentials file not found at: /mnt/d/agentic_ai/credentials/credentials.json. Cannot initiate OAuth flow.
+2025-11-13 16:45:18,153 - app.api.routes.auth - ERROR - Failed to build Google OAuth flow: Google credentials file is missing. Please download it from GCP and save it as 'credentials.json' in the credentials directory.
+2025-11-13 16:45:37,278 - app.integrations.google_auth - ERROR - Credentials file not found at: /mnt/d/agentic_ai/credentials/credentials.json. Cannot initiate OAuth flow.
+2025-11-13 16:45:37,286 - app.api.routes.auth - ERROR - Failed to build Google OAuth flow: Google credentials file is missing. Please download it from GCP and save it as 'credentials.json' in the credentials directory.
+2025-11-14 09:00:00,177 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 09:00:00,182 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 09:01:32,170 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 09:01:32,172 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 09:02:39,308 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:37:58,216 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 12:37:58,218 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 12:38:19,991 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:40:10,663 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:44:42,093 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:48:14,146 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:51:59,851 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:52:28,688 - app.api.routes.auth - ERROR - Google OAuth callback failed: Scope has changed from "https://www.googleapis.com/auth/calendar email openid profile https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/forms" to "https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/gmail.send https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/forms".
+2025-11-14 12:56:45,738 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 12:56:45,739 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 12:57:17,934 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:57:22,533 - app.api.routes.auth - ERROR - Google OAuth callback failed: 'Credentials' object has no attribute 'authorize'
+2025-11-14 12:58:04,206 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 12:58:54,039 - app.api.routes.auth - ERROR - Google OAuth callback failed: 'Credentials' object has no attribute 'authorize'
+2025-11-14 13:07:32,381 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 13:07:32,383 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 13:07:58,572 - app.api.routes.auth - INFO - Redirecting user to Google for authorization.
+2025-11-14 13:08:12,686 - app.api.routes.auth - INFO - Successfully obtained and stored credentials at /mnt/d/agentic_ai/credentials/token.json
+2025-11-14 13:11:41,520 - app.api.routes.auth - ERROR - Error checking token status: 'Credentials' object has no attribute 'authorize'
+2025-11-14 13:25:06,009 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 13:25:06,011 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 13:27:50,865 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 13:27:50,866 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 13:28:24,179 - app.services.mcp_service - ERROR - Tool definition file not found at /mnt/d/agentic_ai/mcp_config/tool_definitions.json
+2025-11-14 13:28:24,181 - app.services.agent_orchestrator - INFO - Starting orchestration for: Write a mail to nishantkumbhar812@gmail.com saying hi
+2025-11-14 13:28:25,147 - app.services.llm_service - ERROR - Error getting initial chat completion: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo-preview` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-11-14 13:28:25,148 - app.api.routes.chat - ERROR - Error processing chat message: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo-preview` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "/mnt/d/agentic_ai/backend/app/api/routes/chat.py", line 26, in post_chat_message
+    response = orchestrator.orchestrate_chat(user_message=request.message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/agent_orchestrator.py", line 45, in orchestrate_chat
+    response = self.llm_service.get_chat_completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/llm_service.py", line 47, in get_chat_completion
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_utils/_utils.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo-preview` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-11-14 13:30:59,947 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 13:30:59,949 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 13:31:16,389 - app.services.mcp_service - ERROR - Tool definition file not found at /mnt/d/agentic_ai/mcp_config/tool_definitions.json
+2025-11-14 13:31:16,390 - app.services.agent_orchestrator - INFO - Starting orchestration for: Write a mail to nishantkumbhar812@gmail.com saying hi
+2025-11-14 13:31:17,701 - app.services.llm_service - ERROR - Error getting initial chat completion: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-11-14 13:31:17,703 - app.api.routes.chat - ERROR - Error processing chat message: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "/mnt/d/agentic_ai/backend/app/api/routes/chat.py", line 26, in post_chat_message
+    response = orchestrator.orchestrate_chat(user_message=request.message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/agent_orchestrator.py", line 45, in orchestrate_chat
+    response = self.llm_service.get_chat_completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/llm_service.py", line 47, in get_chat_completion
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_utils/_utils.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `gpt-4-turbo` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-11-14 13:40:10,342 - app.main - INFO - Swagger Documentation (Docs) URL is: http://0.0.0.0:8000/api/v1/docs
+2025-11-14 13:40:10,344 - app.main - INFO - ReDoc Documentation (Redoc) URL is: http://0.0.0.0:8000/api/v1/redoc
+2025-11-14 13:40:49,614 - app.services.mcp_service - ERROR - Tool definition file not found at /mnt/d/agentic_ai/mcp_config/tool_definitions.json
+2025-11-14 13:40:49,616 - app.services.agent_orchestrator - INFO - Starting orchestration for: Write a mail to nishantkumbhar812@gmail.com saying hi
+2025-11-14 13:40:53,754 - app.services.llm_service - ERROR - Error getting initial chat completion: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-11-14 13:40:53,755 - app.api.routes.chat - ERROR - Error processing chat message: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/mnt/d/agentic_ai/backend/app/api/routes/chat.py", line 26, in post_chat_message
+    response = orchestrator.orchestrate_chat(user_message=request.message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/agent_orchestrator.py", line 45, in orchestrate_chat
+    response = self.llm_service.get_chat_completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/app/services/llm_service.py", line 47, in get_chat_completion
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_utils/_utils.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 645, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1088, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 853, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 916, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 958, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 916, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 958, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/mnt/d/agentic_ai/backend/venv/lib/python3.12/site-packages/openai/_base_client.py", line 930, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}

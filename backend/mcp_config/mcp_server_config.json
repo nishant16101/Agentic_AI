@@ -1,0 +1,29 @@
+{
+  "servers": {
+    "GmailMCPServer": [
+      "gmail_send_email",
+      "gmail_delete_email",
+      "gmail_read_emails"
+    ],
+    "GCalendarMCPServer": [
+      "calendar_schedule_meeting",
+      "calendar_cancel_event",
+      "calendar_list_events"
+    ],
+    "GDocsMCPServer": [
+      "gdocs_create_document",
+      "gdocs_read_document",
+      "gdocs_update_document"
+    ],
+    "GSheetsMCPServer": [
+      "gsheet_create_sheet",
+      "gsheet_read_sheet",
+      "gsheet_update_sheet"
+    ],
+    "GFormsMCPServer": [
+      "gforms_create_form",
+      "gforms_read_form",
+      "gforms_get_responses"
+    ]
+  }
+}

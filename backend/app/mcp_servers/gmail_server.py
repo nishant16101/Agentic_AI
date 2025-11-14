@@ -1,6 +1,6 @@
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from googleapiclient.discovery import build
-from email.mine.text import MIMEText
+from email.mime.text import MIMEText # Corrected import: 'mine' -> 'mime'
 import base64
 
 from ..integrations.google_auth import get_authorized_http
@@ -18,6 +18,7 @@ class GmailMCPServer:
             self.service = build('gmail', 'v1', http=http)
         return self.service
     
+    # Tool: gmail_send_email
     def send_email(self,recipient:str,subject:str,body:str)->Dict[str,Any]:
         """Sends an email using Gmail Api"""
         try:
@@ -27,7 +28,7 @@ class GmailMCPServer:
             message['subject'] = subject
 
             #encode the message for api
-            raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode(  )
+            raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
 
             #send message
             sent_message = service.users().messages().send(
@@ -38,33 +39,15 @@ class GmailMCPServer:
 
             return {
                 "status": "success",
-                "message": f"Email to {recipient} with subject '{subject}' has been sent.",
-                "details": {"id": sent_message.get('id'), "threadId": sent_message.get('threadId')}
+                "message": f"Email sent to {recipient} with ID: {sent_message['id']}"
             }
         except Exception as e:
-            logger.error(f"Failed to send email:{e}")
-            return {
-                "status": "error",
-                "message": f"Failed to send email: {e}"
-            }
-    # Tool: gmail_delete_email
-    def gmail_delete_email(self, message_id: str) -> Dict[str, Any]:
-        """Deletes an email."""
-        try:
-            service = self._get_service()
-            service.users().messages().delete(userId='me', id=message_id).execute()
-            
-            return {
-                "status": "success",
-                "message": f"Email with ID {message_id} deleted successfully."
-            }
-        except Exception as e:
-            logger.error(f"Failed to delete email: {e}")
-            return {"status": "error", "message": f"Failed to delete email. Details: {str(e)}"}
-
+            logger.error(f"Failed to send email: {e}")
+            return {"status": "error", "message": f"Failed to send email. Details: {str(e)}"}
+        
     # Tool: gmail_read_emails
-    def gmail_read_emails(self, max_results: int = 5, query: Optional[str] = None) -> Dict[str, Any]:
-        """Reads recent emails."""
+    def read_emails(self, query: str = '', max_results: int = 10) -> Dict[str, Any]:
+        """Reads and summarizes recent emails matching a query (e.g., 'is:unread from:boss')."""
         try:
             service = self._get_service()
             

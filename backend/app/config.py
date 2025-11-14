@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     LLM_PROVIDER: str = "openai" 
     OPENAI_API_KEY: str  # No default - must come from .env
     ANTHROPIC_API_KEY: str = ""
-    LLM_MODEL: str = "gpt-4-turbo-preview" 
+    LLM_MODEL: str = "gpt-4o" 
     
     # Google OAuth Settings
     GOOGLE_CLIENT_ID: str  # No default - must come from .env
@@ -23,8 +23,10 @@ class Settings(BaseSettings):
     GOOGLE_REDIRECT_URI: str = "http://localhost:8000/api/v1/auth/callback"
     GOOGLE_SCOPES: list[str] = [
         "openid",
-        "email",
-        "profile",
+        # CHANGED: Use full URL for basic scopes to avoid mismatch error
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        # END CHANGED
         "https://www.googleapis.com/auth/gmail.send",
         "https://www.googleapis.com/auth/documents",
         "https://www.googleapis.com/auth/calendar",
